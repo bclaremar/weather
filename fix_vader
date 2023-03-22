@@ -1,0 +1,9 @@
+#!/bin/bash
+
+file=$1
+cmd="cp -f $file ${file}o"
+echo $cmd
+eval $cmd
+
+sed -i "s/\/td/nan/g" $file
+
